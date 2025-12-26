@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welding & Metal Fabrication Services</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%9B%A0%EF%B8%8F%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            background: #f7f7f7;
+            color: #222;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 2rem 1rem 1rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        .slider-container {
+            max-width: 900px;
+            margin: 2rem auto 0 auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 1.5rem 1rem 2.5rem 1rem;
+        }
+        .slider-title {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #1a4d2e;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 1.5rem auto;
+            overflow: hidden;
+            background: #f7f7f7;
+            border-radius: 8px;
+            min-height: 420px;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            height: 420px;
+            text-align: center;
+        }
+        .slide img, .slide video {
+            width: 100%;
+            height: 420px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: #222;
+        }
+        .slider .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(34,34,34,0.7);
+            color: #fff;
+            border: none;
+            font-size: 2rem;
+            padding: 0.2rem 0.7rem;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2;
+            transition: background 0.2s;
+        }
+        .slider .slider-btn:hover {
+            background: #1a4d2e;
+        }
+        .img-prev { left: 10px; }
+        .img-next { right: 10px; }
+        .vid-prev { left: 10px; }
+        .vid-next { right: 10px; }
+        .content {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 2rem;
+        }
+        h2 {
+            color: #1a4d2e;
+            margin-top: 2rem;
+        }
+        ul, ol {
+            margin-left: 1.5rem;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .feature {
+            flex: 1 1 220px;
+            background: #f0f4f8;
+            border-radius: 8px;
+            padding: 1.2rem 1rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            margin-bottom: 1rem;
+        }
+        .feature h3 {
+            margin-top: 0;
+            color: #2d6a4f;
+        }
+        .why {
+            background: #e9f5e1;
+            border-left: 5px solid #2d6a4f;
+            padding: 1.5rem 1rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+        }
+        @media (max-width: 700px) {
+            .slider-container { padding: 0.5rem; }
+            .slider { min-height: 180px; }
+            .slide, .slide img, .slide video { height: 180px; }
+            .content { padding: 1rem; }
+            .features { flex-direction: column; gap: 1rem; }
+        }
+    </style>
+    <script defer src="slider.js"></script>
+</head>
+<body>
+    <header>
+        <h1><span aria-label="welding" title="Welding">🛠️</span> Welding & Metal Fabrication</h1>
+        <p><span aria-label="sparkles" title="Quality">✨</span> Durable, high-quality work tailored to your needs <span aria-label="shield" title="Secure">🛡️</span></p>
+    </header>
+    <div class="slider-container">
+        <div class="slider-title"><span aria-label="camera" title="Photo Gallery">📸</span> Photo Gallery</div>
+        <div class="slider image-slider">
+            <button class="slider-btn img-prev" aria-label="Previous image">&#8592;</button>
+            <div class="slide"><img src="images/IMG-20250119-WA0001.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="images/IMG-20251219-WA0003.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="images/IMG-20251219-WA0004.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="images/IMG_20250126_125956.jpg" alt="Image 4"></div>
+            <div class="slide"><img src="images/IMG_20250126_130014.jpg" alt="Image 5"></div>
+            <div class="slide"><img src="images/IMG_20250126_130121.jpg" alt="Image 6"></div>
+            <div class="slide"><img src="images/IMG_20251013_172313.jpg" alt="Image 7"></div>
+            <div class="slide"><img src="images/IMG_20251013_172344.jpg" alt="Image 8"></div>
+            <div class="slide"><img src="images/IMG_20251013_172409.jpg" alt="Image 9"></div>
+            <div class="slide"><img src="images/IMG_20251013_172423.jpg" alt="Image 10"></div>
+            <div class="slide"><img src="images/IMG_20251013_172453.jpg" alt="Image 11"></div>
+            <div class="slide"><img src="images/IMG_20251013_172504.jpg" alt="Image 12"></div>
+            <div class="slide"><img src="images/IMG_20251206_145610.jpg" alt="Image 13"></div>
+            <div class="slide"><img src="images/IMG_20251207_110434.jpg" alt="Image 14"></div>
+            <div class="slide"><img src="images/IMG_20251207_110448.jpg" alt="Image 15"></div>
+            <div class="slide"><img src="images/IMG_20251209_164333.jpg" alt="Image 16"></div>
+            <div class="slide"><img src="images/IMG_20251209_164337.jpg" alt="Image 17"></div>
+            <div class="slide"><img src="images/IMG_20251209_164357.jpg" alt="Image 18"></div>
+            <div class="slide"><img src="images/IMG_20251209_164428.jpg" alt="Image 19"></div>
+            <div class="slide"><img src="images/IMG_20251209_164436.jpg" alt="Image 20"></div>
+            <div class="slide"><img src="images/IMG_20251210_171337.jpg" alt="Image 21"></div>
+            <div class="slide"><img src="images/IMG_20251210_171431.jpg" alt="Image 22"></div>
+            <div class="slide"><img src="images/IMG_20251212_142851.jpg" alt="Image 23"></div>
+            <div class="slide"><img src="images/IMG_20251212_142900.jpg" alt="Image 24"></div>
+            <div class="slide"><img src="images/IMG_20251212_142903.jpg" alt="Image 25"></div>
+            <div class="slide"><img src="images/IMG_20251212_142909.jpg" alt="Image 26"></div>
+            <div class="slide"><img src="images/IMG_20251215_141747.jpg" alt="Image 27"></div>
+            <div class="slide"><img src="images/IMG_20251215_141757.jpg" alt="Image 28"></div>
+            <div class="slide"><img src="images/IMG_20251215_142135.jpg" alt="Image 29"></div>
+            <div class="slide"><img src="images/IMG_20251215_142153.jpg" alt="Image 30"></div>
+            <div class="slide"><img src="images/IMG_20251215_142216.jpg" alt="Image 31"></div>
+            <div class="slide"><img src="images/IMG_20251215_142228.jpg" alt="Image 32"></div>
+            <div class="slide"><img src="images/IMG_20251223_160035.jpg" alt="Image 33"></div>
+            <div class="slide"><img src="images/IMG_20251223_160044.jpg" alt="Image 34"></div>
+            <div class="slide"><img src="images/IMG_20251224_162951.jpg" alt="Image 35"></div>
+            <div class="slide"><img src="images/IMG_20251225_123750.jpg" alt="Image 36"></div>
+            <div class="slide"><img src="images/IMG_20251225_134339.jpg" alt="Image 37"></div>
+            <div class="slide"><img src="images/IMG_20251225_134347.jpg" alt="Image 38"></div>
+            <div class="slide"><img src="images/IMG_20251225_134405.jpg" alt="Image 39"></div>
+            <div class="slide"><img src="images/IMG_20251225_134425.jpg" alt="Image 40"></div>
+            <div class="slide"><img src="images/IMG_20251225_141846.jpg" alt="Image 41"></div>
+            <div class="slide"><img src="images/IMG_20251225_141855.jpg" alt="Image 42"></div>
+            <div class="slide"><img src="images/IMG_20251225_163721.jpg" alt="Image 43"></div>
+            <div class="slide"><img src="images/IMG_20251225_163732.jpg" alt="Image 44"></div>
+            <div class="slide"><img src="images/IMG_20251225_163821.jpg" alt="Image 45"></div>
+            <div class="slide"><img src="images/IMG_20251225_163826.jpg" alt="Image 46"></div>
+            <div class="slide"><img src="images/IMG_20251225_164021.jpg" alt="Image 47"></div>
+            <div class="slide"><img src="images/IMG_20251226_101114.jpg" alt="Image 48"></div>
+            <div class="slide"><img src="images/IMG_20251226_101140.jpg" alt="Image 49"></div>
+            <div class="slide"><img src="images/IMG_20251226_103613.jpg" alt="Image 50"></div>
+            <div class="slide"><img src="images/IMG_20251226_105215.jpg" alt="Image 51"></div>
+            <div class="slide"><img src="images/IMG_20251226_111604.jpg" alt="Image 52"></div>
+            <button class="slider-btn img-next" aria-label="Next image">&#8594;</button>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <h2><span aria-label="toolbox" title="Our Services">🧰</span> Our Services</h2>
+        <div class="features">
+            <div class="feature">
+                <h3><span aria-label="door" title="Burglar Doors">🔩</span> Burglar Doors</h3>
+                <p><span aria-label="lock" title="Secure">🔒</span> Custom-built to fit any doorway or style — secure, stylish, and built to last.</p>
+            </div>
+            <div class="feature">
+                <h3><span aria-label="window" title="Security Windows">🪟</span> Security Windows</h3>
+                <p><span aria-label="shield" title="Protection">🛡️</span> Neat, strong, and weather-resistant window barriers for long-term protection and peace of mind.</p>
+            </div>
+            <div class="feature">
+                <h3><span aria-label="gate" title="Gates & Fencing">🚪</span> Gates & Fencing</h3>
+                <p><span aria-label="fence" title="Fencing">🏡</span> From driveway and pedestrian gates to modern or traditional yard fencing — all designed for strength and visual appeal.</p>
+            </div>
+            <div class="feature">
+                <h3><span aria-label="fork" title="Devil’s Fork">🛡️</span> Devil’s Fork Installations</h3>
+                <p><span aria-label="high security" title="High Security">⚡</span> High-security fencing solutions for residential and commercial properties.</p>
+            </div>
+            <div class="feature">
+                <h3><span aria-label="metal" title="Custom Metalwork">🧱</span> Custom Metalwork</h3>
+                <p><span aria-label="sparkle" title="Unique">🌟</span> Unique, made-to-order pieces based on client sketches or our own in-house designs.</p>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-title"><span aria-label="video camera" title="Video Gallery">🎥</span> Video Gallery</div>
+            <div class="slider video-slider">
+                <button class="slider-btn vid-prev" aria-label="Previous video">&#8592;</button>
+                <div class="slide"><video src="images/VID-20250119-WA0006.mp4" controls muted></video></div>
+                <div class="slide"><video src="images/VID-20251219-WA0005.mp4" controls muted></video></div>
+                <div class="slide"><video src="images/VID_20251225_134327.mp4" controls muted></video></div>
+                <div class="slide"><video src="images/VID_20251225_141940.mp4" controls muted></video></div>
+                <button class="slider-btn vid-next" aria-label="Next video">&#8594;</button>
+            </div>
+        </div>
+        <h2><span aria-label="money" title="Pricing">💰</span> Pricing</h2>
+        <ul>
+            <li><span aria-label="handshake" title="Flexible">🤝</span> Flexible pricing depending on whether you supply the materials, or we provide both materials and labor.</li>
+            <li><span aria-label="clipboard" title="Transparent">📋</span> Transparent quotes tailored to your project size, design complexity, and material preferences.</li>
+        </ul>
+        <h2><span aria-label="palette" title="Design Options">🎨</span> Design Options</h2>
+        <ul>
+            <li><span aria-label="star" title="Standard">⭐</span> Choose from our range of ready-made standard designs, or</li>
+            <li><span aria-label="pencil" title="Custom">✏️</span> Custom concepts based on your own drawings or photos.</li>
+            <li><span aria-label="lightbulb" title="Creative">💡</span> We value creativity and flexibility — no project is too small or too complex.</li>
+        </ul>
+        <div class="why">
+            <h2><span aria-label="trophy" title="Why Choose Us">🏆</span> Why Choose Us</h2>
+            <ul>
+                <li><span aria-label="check" title="Skilled">✔️</span> Skilled welder with proven craftsmanship and attention to detail</li>
+                <li><span aria-label="medal" title="Quality">🥇</span> Guaranteed quality and durability</li>
+                <li><span aria-label="design" title="Custom">🎯</span> Custom designs to suit your space and style</li>
+                <li><span aria-label="money bag" title="Affordable">💸</span> Affordable and transparent pricing</li>
+                <li><span aria-label="rocket" title="Reliable">🚀</span> Reliable service from fabrication to installation</li>
+            </ul>
+        </div>
+    </div>
+    <footer style="background:#222; color:#fff; padding:2rem 1rem 1.5rem 1rem; text-align:center; margin-top:2rem;">
+        <div style="max-width:800px; margin:0 auto;">
+            <h2 style="font-size:1.3rem; margin-bottom:1.2rem; display:flex; align-items:center; justify-content:center; gap:0.5rem;">
+                <span aria-label="contact" title="Contact">📞</span> Contact Us
+            </h2>
+            <div style="font-size:1.1rem; line-height:2;">
+                <span aria-label="phone" title="Phone">📱</span> <b>Call:</b> <a href="tel:+27817886852" style="color:#fff; text-decoration:underline;">+27 81 788 6852</a><br>
+                                <span aria-label="whatsapp" title="WhatsApp" style="vertical-align:middle; display:inline-block; width:1.3em; height:1.3em;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="1.3em" height="1.3em" style="vertical-align:middle;"><circle cx="16" cy="16" r="16" fill="#25D366"/><path d="M24.5 19.7c-.4-.2-2.3-1.1-2.6-1.2-.3-.1-.5-.2-.7.2-.2.4-.8 1.2-1 1.4-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-1.2-1.1-2-2.5-2.2-2.9-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.6.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7 0-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5-.2 0-.4 0-.6 0-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.2.9 2.3 1 2.5.1.2 1.7 2.7 4.1 3.7 1.5.6 2.1.7 2.8.6.5-.1 1.2-.5 1.4-1 .2-.5.2-.9.1-1.1z" fill="#fff"/></svg>
+                                </span> <b>WhatsApp:</b> <a href="https://wa.me/27817886852" style="color:#fff; text-decoration:underline;">+27 81 788 6852</a><br>
+                <span aria-label="email" title="Email">✉️</span> <b>Email:</b> <a href="mailto:piuspudinyane3141@gmail.com" style="color:#fff; text-decoration:underline;">piuspudinyane3141@gmail.com</a><br>
+                <span aria-label="address" title="Address">📍</span> <b>Address:</b> 5222 F Section West, Botshabelo, Free State, 9781
+            </div>
+            <div style="margin-top:1.5rem; font-size:0.95rem; color:#bbb;">&copy; 2025 Welding & Metal Fabrication. All rights reserved.</div>
+        </div>
+    </footer>
+</body>
+</html>
